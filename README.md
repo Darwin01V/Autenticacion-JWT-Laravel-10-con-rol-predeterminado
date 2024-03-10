@@ -37,6 +37,8 @@ JWT AUTENTICACION CON ROL PREDETERMINADO
     php artisan make:request LoginRequest
     php artisan make:request RegisterRequest
 
+
+----------------------------------------------------------------------
 6. Modificar el modelo User
 
 <?php
@@ -104,7 +106,7 @@ class User extends Authenticatable implements JWTSubject
 }
 
 
-
+-----------------------------------------------------
 7. Crear el middleware CkekJWt
 
 php artisan make:middleware CkeckJWT 
@@ -148,6 +150,8 @@ class CkeckJWT
     }
 }
 
+
+--------------------------------------------------------------------------------------------------
 
 8. Publicarlo en el archivo kernel.php
 
